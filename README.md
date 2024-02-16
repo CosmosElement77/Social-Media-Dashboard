@@ -1,4 +1,4 @@
-# Weather-app-Project-FEE
+# Social-Media-Dashboard-FEE
 
 ##Collaborative Project made by : 
 Jaivardhan Khanna(2210990429) 
