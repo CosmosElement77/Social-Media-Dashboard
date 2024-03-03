@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" lang="en">
+    <link rel="stylesheet" href="index.css" >
+    <link  rel="stylesheet" href="bootstrap.min.css">
+    <link rel="icon" href="icons/logo.svg" type="image/png" sizes="32x32 64x64">
+</head>
+<title>Beingsocial.net</title>
+
+<nav class=" navbar-fixed navbar-expand container-fluid " id="navigation">
+    <ul class=" nav">
+        <li class="nav-item" id="logo"><a class="nav-link " href="index.html"> <img src="icons/logo2.png" width="130"></a></li>
+        <li class="nav-item d-flex" >
+                <input placeholder="Search here" id="searchbar" class="form-control" >
+                <button class="btn " id="submit" type="submit" onsubmit="search()"">Find</button>
+        </li>
+        <li class="nav-item" id="bell"><a class="nav-link" href="notification.html"><img src="icons/bell.png" width="25"></a></li><br>
+    </ul>
+
+</nav>
+<!-- <div class="border-bottom "></div> -->
+<nav class="nav-left sidebar py-5 ">
+    <ul class="nav-pills">
+        <li class="nav-item" id="home">
+            <a class="nav-link" href="index.html"><img src="icons/home-vector.jpg" width="25"><title >Home button</title></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#searchbar"><img src="icons/search.png" width="25"><title>Search</title></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="reels.html" ><img src="icons/reels.jpg" width="25"><title>Watch Reels</title></a>
+        </li>
+    </ul>
+
+</nav> 
+
+<main class="container-fluid">
+    
+</main>
+
+<script src="index.js"></script>    
+<script>
+    let ele=document.getElementById("searchbar");
+    localStorage.setItem("ele","username");
+    console.log(localStorage.getItem("username"));
+</script>
+</html>

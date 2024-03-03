@@ -1,0 +1,71 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #1e1e1e;
+}
+
+
+#navigation {
+    position: fixed;
+    z-index: 2;
+    background-color: #000000;
+    padding-bottom: 1px;
+    /* display: inline-flex; */
+}
+
+#navigation #searchbar {
+    position: relative;
+    margin-top: 15px;
+    width: 500px;
+    left: 40%;
+}
+
+#navigation #searchbar:focus {
+    outline: solid 2px rgba(6, 147, 255, 0.651);
+}
+
+#navigation #bell {
+    left: 30%;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+@media only screen and (max-width:1200px) {
+    #navigation #bell {
+        left: 20%;
+    }
+}
+
+
+#navigation #submit {
+    color: white;
+    position:relative;
+    /* bottom: 50px; */
+    /* left: 630px; */
+    left: 12%;
+    padding-top: 20px;
+    margin-left: 16%;
+}
+
+.sidebar {
+    background-color: rgb(0, 0, 0);
+    width: 70px !important;
+    position: fixed;
+    border-right: solid rgb(174, 174, 174) 1px;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 70px 0px 70px -20px;
+}
+
+.border-bottom {
+    border: solid white 1px;
+}
