@@ -71,7 +71,16 @@ html {
 .main
 {
     position: relative;
-    top: 100px;
-    left:300px;  
-
+    top: 150px;
+    left:250px;  
+}
+.bio{
+    position: relative;
+    padding-left: 350px;
+}
+#blue_tick{
+    width: 25px;
+}
+#username{
+    font-size: 30px;
 }
