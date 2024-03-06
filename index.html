@@ -7,41 +7,50 @@
 </head>
 <title>Beingsocial.net</title>
 
-<nav class=" navbar-fixed navbar-expand container-fluid " id="navigation">
-    <ul class=" nav">
-        <li class="nav-item" id="logo"><a class="nav-link " href="index.html"> <img src="icons/logo2.png" width="130"></a></li>
-        <li class="nav-item d-flex" >
+<div id="top-nav" >
+    <nav class=" navbar-fixed navbar-expand container-fluid " id="navigation">
+        <ul class=" nav">
+            <li class="nav-item" id="logo"><a class="nav-link " href="index.html"> <img src="icons/logo2.png" width="130"></a></li>
+            <li class="nav-item " >
                 <input placeholder="Search here" id="searchbar" class="form-control" >
-                <button class="btn " id="submit" type="submit" onsubmit="search()"">Find</button>
-        </li>
-        <li class="nav-item" id="bell"><a class="nav-link" href="notification.html"><img src="icons/bell.png" width="25"></a></li><br>
-    </ul>
-
-</nav>
+                <button class="btn" id="submit" onclick="get_data()"">Find</button>
+            </li>
+        <!-- <li class="nav-item" id="bell"><a class="nav-link" href="notification.html"><img src="icons/bell.png" width="25"></a></li>-->
+        </ul>
+    </nav>
+</div>
 <!-- <div class="border-bottom "></div> -->
-<nav class="nav-left sidebar py-5 ">
-    <ul class="nav-pills">
-        <li class="nav-item" id="home">
+<div id="side-nav" >
+    <nav class="nav-left sidebar py-5 ">
+        <ul class="nav-pills">
+            <li class="nav-item" id="home">
             <a class="nav-link" href="index.html"><img src="icons/home-vector.jpg" width="25"><title >Home button</title></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#searchbar"><img src="icons/search.png" width="25"><title>Search</title></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="reels.html" ><img src="icons/reels.jpg" width="25"><title>Watch Reels</title></a>
-        </li>
-    </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#searchbar"><img src="icons/search.png" width="25"><title>Search</title></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reels.html" ><img src="icons/reels.jpg" width="25"><title>Watch Reels</title></a>
+            </li>
+        </ul>
+    </nav> 
+</div>
 
-</nav> 
-
-<main class="container-fluid">
-    
+<main class="container-fluid main">
+    <img src="icons/logo.png">
+    <h3 title="Followers">Followers</h3>
+    <h3 title="Following">Following</h3>
 </main>
 
 <script src="index.js"></script>    
 <script>
-    let ele=document.getElementById("searchbar");
-    localStorage.setItem("ele","username");
-    console.log(localStorage.getItem("username"));
+
+let inp=document.getElementById("searchbar");
+inp.addEventListener("keypress",function(ev)
+{
+    if(ev.key ==="Enter")
+    document.getElementById("submit").click();
+});
+
 </script>
 </html>
