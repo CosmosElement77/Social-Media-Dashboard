@@ -38,35 +38,40 @@
 
 <main class="container main">
     <div class = "imag ">
-        <img src="icons/logo.svg" alt="profile picture" height = 200 width = 200 class="rounded float-start">
+        <img src="icons/logo.svg" alt="profile picture" height = 200 width = 200 class="rounded float-start" id="profile_pic">
     </div>
     
-    <div class="bio">
+    <div class="bio ">
         <div class = "row">
-            <p id="username">
-                UserName
-                <img id ="blue_tick" src="icons/blue_tick.png" alt="verified">
+            <p id="username" class="col-sm-2">
+                Team@BeingSocial
             </p>
-            
+            <!-- <img id ="blue_tick" class="col" src="icons/blue_tick.png " title="Verified User" alt="Verified User"> -->
         </div>
+        <img id ="blue_tick" src="icons/blue_tick.png " title="Verified User" alt="Verified User">
         <div class = "row">
             <div class ="col-sm-2 ">
-                <p>Followers</p>
+                <span>Followers</span>
+                <br>
+                <span id="Followers">#######</span>
             </div>
     
             <div class ="col-sm-2">
-                <p>Following</p>
+                <span >Following</span>
+                <br>
+                <span id="Following">#######</span>
             </div>
         </div>
+        <br>
         <div class ="row">
-            <div class = "col-sm-3">
-                <p>FullName</p>
+            <div class = "col-sm-3 align-self-center">
+                <p id="fullname">Being Social</p>
             </div>
         </div>
     
         <div class ="row">
             <div class = "col-sm-3">
-                <p>Bio</p>
+                <p id="bio">Just made a project with team efforts 😊</p>
             </div>
         </div>
     </div>

@@ -1,6 +1,7 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    transition: linear 2s;
     /* background-color: #1e1e1e; */
 }
 
@@ -80,6 +81,10 @@ html {
 }
 #blue_tick{
     width: 25px;
+    position: relative;
+    left:16em;bottom: 49px;
+    padding:0 0 0 0;
+
 }
 #username{
     font-size: 30px;

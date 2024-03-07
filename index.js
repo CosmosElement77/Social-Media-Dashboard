@@ -11,7 +11,8 @@ function get_ip()
 	catch (error){console.log("error found");}
 }
 
-
+var response;
+var result;
 async function get_data()
 {	
 	let username=document.getElementById("searchbar").value;
@@ -23,13 +24,28 @@ async function get_data()
 			'X-RapidAPI-Host': 'instagram28.p.rapidapi.com'
 		}
 	};
-	
+
 	try {
-		var response =  fetch(url, options);
-		var result =  response.json();
+	    response = await fetch(url, options);
+	    result = await response.json();
 		console.log(result);
+		// document.getElementById("profile_pic").src='result.data.user.profile_pic_url_hd';
+		document.getElementById("username").innerText=result.data.user.username;
+		/*document.getElementById("username").style.color="blue";*/
+		document.getElementById("Followers").innerText=result.data.user.edge_followed_by.count;
+		document.getElementById("Following").innerText=result.data.user.edge_follow.count;
+		document.getElementById("fullname").innerText=result.data.user.full_name;
+		document.getElementById("fullname").style.fontWeight=600;
+		document.getElementById("bio").innerText=result.data.user.biography;
+
+		if(result.data.user.is_verified ==false)
+		{
+			document.getElementById("blue_tick").display="none";
+		}
+
 	} catch (error) {
-		console.error(error);
+		alert("Error Fetching the API ,check the console to see more...");
+		console.log("Error Found");
 	}
 }
 
