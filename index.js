@@ -43,7 +43,7 @@ async function get_data()
 		document.getElementById("bio").innerText=result.data.user.biography;
 
 		if(result.data.user.is_verified ==false)
-		{document.getElementById("blue_tick").src="icons/dot-1.jpg";}
+		{document.getElementById("blue_tick").src="icons/dot-1.jpg";document.getElementById("blue_tick").title="Not Verified";}
 		else
 		{document.getElementById("blue_tick").src="icons/blue_tick.png";}
 
