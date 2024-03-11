@@ -18,9 +18,9 @@ async function get_data()
 	const options = {
 		method: 'GET',
 		headers: {
-			'X-RapidAPI-Key': 'ef87885f91msh9eb35ef4580f52fp1f6723jsn90a46f556136',/*Jaivardhan*/
+			// 'X-RapidAPI-Key': 'ef87885f91msh9eb35ef4580f52fp1f6723jsn90a46f556136',/*Jaivardhan*/
 			// 'X-RapidAPI-Key':'16709c2453msh7972ec99c11ded8p17b565jsn50dee93c0f00',/*Jashan*/
-			// 'X-RapidAPI-Key':'cb89798197msh1c32806fcf63babp142715jsn148e998a73e2',/*Jasmine*/
+			'X-RapidAPI-Key':'cb89798197msh1c32806fcf63babp142715jsn148e998a73e2',/*Jasmine*/
 			'X-RapidAPI-Host': 'instagram28.p.rapidapi.com'
 		}
 	};
